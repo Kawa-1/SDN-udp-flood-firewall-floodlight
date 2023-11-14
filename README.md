@@ -14,7 +14,7 @@ This project implements a UDP flood firewall using the Floodlight controller, an
 
 ## Configuration
 
-**in progress**
+In this topology, a central point is represented by a switch serving as the core. Connected to this switch are four PC terminals, comprising two "legitimate" hosts alongside two "malicious" hosts, intended to simulate attack scenarios. Additionally, the switch interfaces with a controller, while a server is also linked to the switch to complete the network setup.
 
 ## Topology:
 
