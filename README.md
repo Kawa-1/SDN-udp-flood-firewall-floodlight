@@ -18,7 +18,7 @@ This project implements a UDP flood firewall using the Floodlight controller, an
 
 ## Topology:
 
-![](images/topologia.jpg)
+![](images/topologia.png)
 
 ## Documentation:
 
