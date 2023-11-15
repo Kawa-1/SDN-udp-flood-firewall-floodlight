@@ -18,6 +18,18 @@ topology_dict: TopologyDict = {
 
 class CustomTopo(Topo):
     def build(self, topology_dict: TopologyDict = topology_dict):
+        """Build the network topology.
+
+        Creates network nodes (switches and hosts) and links them based on the provided topology dictionary.
+        
+        Args:
+            topology_dict (TopologyDict): A dictionary that defines the network topology.
+                                          Defaults to the globally defined `topology_dict`.
+
+        Raises:
+            ValueError: If an invalid node (not a switch or host) is specified in the topology dictionary.
+        """
+        
         nodes = {}
         created_links = []
 
