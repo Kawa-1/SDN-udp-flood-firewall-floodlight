@@ -10,7 +10,7 @@ All required packets and files with needed version are located in ```topology/re
 
 ## Installation
 
-To run project Linux distribution is needed. It can be chosen by the futere user but need to be compatible with all prerequisites
+To run project Linux distribution is needed. It can be chosen by the futere user but need to be compatible with all prerequisites.
 
 ## Configuration
 
@@ -40,8 +40,8 @@ Before generating UPD flood attack you need to intall generator ```sudo apt inst
 
 ## Literature:
 
-- [https://ieeexplore.ieee.org/document/8666456](**DOS Attack Mitigation Strategies on SDN Controller** by Yun Tian, Vincent Tran, Mutalifu Kuerban (2019) presented at IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC).)
-- [https://ieeexplore.ieee.org/document/7371714](**Extending the Floodlight Controller** by Laura Victoria Morales, Andres Felipe Murillo, Sandra Julieta Rueda presented at the 2015 IEEE 14th International Symposium on Network Computing and Applications.)
-- [https://ieeexplore.ieee.org/document/7495430](**SDN Controllers: A Comparative Study** by Ola Salman, Imad H. Elhajj, Ayman Kayssi, Ali Chehab, presented at the 2016 18th Mediterranean Electrotechnical Conference (MELECON), published by IEEE.)
-- [https://ieeexplore.ieee.org/document/8530546](**Early Detection of Distributed Denial of Service Attack in Era of Software-Defined Network** by Bineet Kumar Joshi, Nitin Joshi, Mahesh Chandra Joshi, presented at the 2018 Eleventh International Conference on Contemporary Computing (IC3), published by IEEE.)
-- [https://ieeexplore.ieee.org/document/7069319](**Early Detection of DDoS Attacks Against SDN Controllers** by Seyed Mohammad Mousavi, Marc St-Hilaire, presented at the 2015 International Conference on Computing, Networking, and Communications (ICNC), published by IEEE.)
+- [**DOS Attack Mitigation Strategies on SDN Controller**](https://ieeexplore.ieee.org/document/8666456) by Yun Tian, Vincent Tran, Mutalifu Kuerban (2019) presented at IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC).
+- [**Extending the Floodlight Controller**](https://ieeexplore.ieee.org/document/7371714) by Laura Victoria Morales, Andres Felipe Murillo, Sandra Julieta Rueda presented at the 2015 IEEE 14th International Symposium on Network Computing and Applications.
+- [**SDN Controllers: A Comparative Study**](https://ieeexplore.ieee.org/document/7495430 by Ola Salman, Imad H. Elhajj, Ayman Kayssi, Ali Chehab, presented at the 2016 18th Mediterranean Electrotechnical Conference (MELECON), published by IEEE.)
+- [**Early Detection of Distributed Denial of Service Attack in Era of Software-Defined Network**](https://ieeexplore.ieee.org/document/8530546) by Bineet Kumar Joshi, Nitin Joshi, Mahesh Chandra Joshi, presented at the 2018 Eleventh International Conference on Contemporary Computing (IC3), published by IEEE.)
+- [**Early Detection of DDoS Attacks Against SDN Controllers**](https://ieeexplore.ieee.org/document/7069319) by Seyed Mohammad Mousavi, Marc St-Hilaire, presented at the 2015 International Conference on Computing, Networking, and Communications (ICNC), published by IEEE.)
