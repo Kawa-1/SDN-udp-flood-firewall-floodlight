@@ -32,6 +32,38 @@ Before generating UPD flood attack you need to intall generator ```sudo apt inst
 
 ![](images/packit.png)
 
+## Pseudokod algorytmu
+
+```{java}
+List<OFFlowStatsEntry> flowStats = getFlowStatistics(sw);
+Map<Integer, int[]> historyFlows = new HashMap<>(); // key - flowId, value [ilość pakietów z poprzedniej iteracji, timestamp do obliczeń]
+Map<String, Integer> blockedHosts = new HashMap<>(); // key - adres MAC/IP, value - timestamp kiedy został zablokowany
+
+for (OFFlowStatsEntry flowStat : flowStats) {
+    if (wartoscZakomentowana > THRESHOLD) { // (flowStat.getPacketCount().getValue(); - historyFlows[flowId][1]) / (actualTimestamp - historyFlows[flowId][2]) 
+    	block(flowId);	// flowId = flowStat.getCookie().getValue()
+    }
+    
+}
+
+// metoda
+block(flowId) {
+    // match hosta po flowId po adresie MAC lub IP
+    // dodawanie go na czarną listę na 60 sekund - każdy ruch z tego hosta jest odrzucany z tego
+    // usuń wszystkie przepływy danego hosta
+}
+
+receivePacketIn() {
+    // sprawdzenie czy dany pakiet przychodzi od hosta znajdującego się na czarnej liście - jeśli tak
+    	// sprawdź czy został zablokowany > 60 sekund temu - jeśli tak
+    		// odblokuj i zaakeptuj ruch
+    	// jeśli nie
+    		// dalej blokuj
+    // jeśli nie
+    	// zaakceptuj ruch
+}
+```
+
 ## Usefull links:
 
 - [Floodlight OpenFlow Controller (OSS)](https://github.com/floodlight/floodlight#floodlight-openflow-controller-oss)
