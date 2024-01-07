@@ -6,7 +6,7 @@ topology_dict = {
     "h2": {"connections": [], "ip": "10.0.0.2"},
     "h3": {"connections": [], "ip": "10.0.0.3"},
     "h4": {"connections": [], "ip": "10.0.0.4"},
-    "h5": {"connections": [], "ip": "10.0.0.100"},
+    "h5": {"connections": [], "ip": "10.0.0.5"},
 }
 
 class CustomTopo(Topo):
