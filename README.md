@@ -32,7 +32,11 @@ Before generating UPD flood attack you need to intall generator ```sudo apt inst
 
 ![](images/packit.png)
 
-## Pseudokod algorytmu
+We add traffic generator in file [traffic_generator.sh](./topology/helpers/traffic_generator.sh) when we should give to input host, which send traffic and number of packets and times. 
+
+![](images/generated_traffic.png)
+
+## Algorithm pseudocode
 
 ```{java}
 List<OFFlowStatsEntry> flowStats = getFlowStatistics(sw);

@@ -2,11 +2,11 @@ from mininet.topo import Topo
 
 topology_dict = {
     "s1": {"connections": ["h1", "h2", "h3", "h4", "h5"]},
-    "h1": {"connections": [], "ip": "10.0.0.1"},
-    "h2": {"connections": [], "ip": "10.0.0.2"},
-    "h3": {"connections": [], "ip": "10.0.0.3"},
-    "h4": {"connections": [], "ip": "10.0.0.4"},
-    "h5": {"connections": [], "ip": "10.0.0.100"},
+    "h1": {"connections": [], "ip": "10.0.0.1", "mac": "6a:87:45:7a:43:11"},
+    "h2": {"connections": [], "ip": "10.0.0.2", "mac": "6a:87:45:7a:43:22"},
+    "h3": {"connections": [], "ip": "10.0.0.3", "mac": "6a:87:45:7a:43:33"},
+    "h4": {"connections": [], "ip": "10.0.0.4", "mac": "6a:87:45:7a:43:44"},
+    "h5": {"connections": [], "ip": "10.0.0.5", "mac": "6a:87:45:7a:43:55"},
 }
 
 class CustomTopo(Topo):
@@ -28,10 +28,11 @@ class CustomTopo(Topo):
         for node, node_info in topology_dict.items():
             connections = node_info.get("connections", [])
             ip = node_info.get("ip", None)
+            mac = node_info.get("mac", None)
             if node.startswith("s"):
                 nodes[node] = self.addSwitch(node)
             elif node.startswith("h"):
-                nodes[node] = self.addHost(node, ip=ip)
+                nodes[node] = self.addHost(node, ip=ip, mac=mac)
             else:
                 raise ValueError(
                     "{0} - forbidden to add to this topology other node than switch (s) or host (h)".format(node)
