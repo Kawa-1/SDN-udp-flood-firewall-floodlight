@@ -2,11 +2,19 @@ from mininet.topo import Topo
 
 topology_dict = {
     "s1": {"connections": ["h1", "h2", "h3", "h4", "h5"]},
+<<<<<<< HEAD
     "h1": {"connections": [], "ip": "10.0.0.1", "mac": "6a:87:45:7a:43:11"},
     "h2": {"connections": [], "ip": "10.0.0.2", "mac": "6a:87:45:7a:43:22"},
     "h3": {"connections": [], "ip": "10.0.0.3", "mac": "6a:87:45:7a:43:33"},
     "h4": {"connections": [], "ip": "10.0.0.4", "mac": "6a:87:45:7a:43:44"},
     "h5": {"connections": [], "ip": "10.0.0.5", "mac": "6a:87:45:7a:43:55"},
+=======
+    "h1": {"connections": [], "ip": "10.0.0.1"},
+    "h2": {"connections": [], "ip": "10.0.0.2"},
+    "h3": {"connections": [], "ip": "10.0.0.3"},
+    "h4": {"connections": [], "ip": "10.0.0.4"},
+    "h5": {"connections": [], "ip": "10.0.0.5"},
+>>>>>>> da0acfc310eb7559a214647e45a4d6c9c4822729
 }
 
 class CustomTopo(Topo):
